@@ -1,0 +1,68 @@
+body{
+    background: #eee;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:90vh;
+ }
+ .card{
+    width:250px;
+    height:350px;
+    border-radius:0px 10px 10px 0px;
+    background:#f4f4f4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    perspective: 100em;
+    margin:25px;
+    box-shadow:30px 40px 40px rgba(0,0,0,0.2);
+ }
+ .cover{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    transform-origin: left;
+    transition:transform 2s;
+    border-radius:0px 10px 10px 0px;
+    font-size:30px;
+    font-weight: bold;
+ }
+ .card:hover .cover{
+    cursor: pointer;
+    transform:rotateY(-120deg);
+ }
+ .coverBack-1, .coverBack-2, .coverBack-3{
+    width:100%;
+    height:100%;
+    border-radius: 0px 10px 10px 0px;
+ }
+
+ .coverBack-1{
+    background:url('/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+ }
+ .coverBack-2{
+    background:url('/2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: center;
+ }
+ .coverBack-3{
+    background:url('/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+ }
+ .sh_btn{
+    border:0px;
+    background: dodgerblue;
+    border-radius: 5px;
+    padding:10px 20px;
+    color:#fff;
+    margin-top:10px;
+ }
